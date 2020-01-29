@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import "./App.css";
+import { starshipsRequest } from "./app/redux/actions/starships";
+import StarshipList from "./app/components/StarshipList";
+import Pagination from "./app/components/Pagination";
 
 function App() {
+  const dispatch = useDispatch();
+  const [currentPage, setCurrentPages] = useState(1);
+  const starships = useSelector(state => state.starships);
+
+  useEffect(() => {
+    dispatch(starshipsRequest(currentPage));
+  }, [currentPage, dispatch]);
+
+  const previousPage = pageNumber => setCurrentPages(pageNumber - 1);
+  const nextPage = pageNumber => setCurrentPages(pageNumber + 1);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid mt-1">
+    <h2>Starships app</h2>
+    <hr />
+      <StarshipList starships={starships} />
+      <Pagination
+        currentPage={currentPage}
+        nextPage={nextPage}
+        previousPage={previousPage}
+        starships={starships.starships}
+      />
     </div>
   );
 }
