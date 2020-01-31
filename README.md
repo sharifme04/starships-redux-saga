@@ -13,8 +13,6 @@ Then you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Also I did not find any information about Unit testing so  I did not add jest/enzyme
-
 Additionally I have added Loading spinner
 
 ---
