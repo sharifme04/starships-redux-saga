@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> render 1`] = `
+<div
+  className="d-flex justify-content-around mt-4"
+>
+  <div>
+    <button
+      className="btn btn-warning"
+      onClick={[Function]}
+      type="button"
+    >
+      Previous
+    </button>
+  </div>
+  <div
+    className="circle"
+  >
+    <p>
+      <b>
+        Page: 
+        1
+      </b>
+    </p>
+  </div>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> return the default when there is no data to map through 1`] = `
+<div
+  className="d-flex justify-content-around mt-4"
+>
+  <div>
+    <button
+      className="btn btn-warning"
+      onClick={[Function]}
+      type="button"
+    >
+      Previous
+    </button>
+  </div>
+  <div
+    className="circle"
+  >
+    <p>
+      <b>
+        Page: 
+      </b>
+    </p>
+  </div>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+</div>
+`;

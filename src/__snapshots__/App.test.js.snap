@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot data renders 1`] = `
+<div
+  className="container-fluid mt-1"
+>
+  <h2>
+    Starships app
+  </h2>
+  <hr />
+  <div
+    className="mt-1"
+  >
+    <div
+      className="row justify-content-center"
+    >
+      <h5>
+         Starships are not available
+      </h5>
+    </div>
+  </div>
+  <div
+    className="d-flex justify-content-around mt-4"
+  >
+    <div>
+      <button
+        className="btn btn-warning"
+        onClick={[Function]}
+        type="button"
+      >
+        Previous
+      </button>
+    </div>
+    <div
+      className="circle"
+    >
+      <p>
+        <b>
+          Page: 
+          1
+        </b>
+      </p>
+    </div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`snapshot renders 1`] = `
+<div
+  className="container-fluid mt-1"
+>
+  <h2>
+    Starships app
+  </h2>
+  <hr />
+  <div
+    className="mt-1"
+  >
+    <div
+      className="row justify-content-center"
+    >
+      <h5>
+         Starships are not available
+      </h5>
+    </div>
+  </div>
+  <div
+    className="d-flex justify-content-around mt-4"
+  >
+    <div>
+      <button
+        className="btn btn-warning"
+        onClick={[Function]}
+        type="button"
+      >
+        Previous
+      </button>
+    </div>
+    <div
+      className="circle"
+    >
+      <p>
+        <b>
+          Page: 
+          1
+        </b>
+      </p>
+    </div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

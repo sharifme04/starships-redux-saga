@@ -7,7 +7,7 @@ const StarshipList = props => {
   const Capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
   return (
     <div className="mt-1">
-      {starships.isLoading ? (
+      {starships && starships.isLoading ? (
         <div className="text-center">
           <div className="spinner-border custom-spin text-info" role="status">
             <span className="sr-only">Loading...</span>

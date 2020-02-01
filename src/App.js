@@ -26,7 +26,7 @@ function App() {
         currentPage={currentPage}
         nextPage={nextPage}
         previousPage={previousPage}
-        starships={starships.starships}
+        starships={starships && starships.starships && starships.starships}
       />
     </div>
   );
